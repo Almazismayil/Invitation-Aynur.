@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper" onclick="showLetter()">
+            <div class="envelope">
+                <div class="letter hidden">
+                    <div class="text">
+                        <strong>Dearest  Aynur,</strong>
+                        <p>You are invited to join us for a cozy outing on Jan 12, 2024, at Rooms / Kefli / Your suggestion. <br><br> Can't wait to see you there! <3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        function showLetter() {
+            const envelope = document.querySelector('.envelope-wrapper');
+            envelope.classList.toggle('flap');
+
+            const letter = document.querySelector('.letter');
+            letter.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
